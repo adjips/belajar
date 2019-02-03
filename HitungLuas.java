@@ -22,6 +22,22 @@ cm dan lebar " + lebar + " cm = " + luas + " cm");
         System.out.println("");
     }
 
+    public static void LuasLingkaran() {
+        double jarijari;
+        double luas;
+        double phi = 3.14;
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan jari-jari(cm) : ");
+        jarijari = input.nextInt();
+        
+        luas = 2 * jarijari * phi;
+
+        System.out.print("Luas lingkaran dengan jari-jari " + jarijari + 
+" = " + luas + " cm");
+        System.out.println("");
+    }
+
 public static void main(String[] args) {
         System.out.println("Program menghitung luas persegi panjang dan 
 luas lingkaran");
@@ -30,4 +46,6 @@ luas lingkaran");
         System.out.println("Menghitung Luas Persegi Panjang!");
         LuasPersegiPanjang();
 
+        System.out.println("Menghitung Luas Lingkaran!");
+        LuasLingkaran();
 }
